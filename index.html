@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arafat Hossain | Mechanical Engineer & Developer</title>
+    <meta name="description" content="Portfolio of Arafat Hossain, Mechanical Engineer specializing in CAD, Automation, and Deep Learning.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Arafat<span>.</span></a>
+            <button class="hamburger" aria-label="Menu" id="hamburger">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#thesis" class="nav-link">Thesis</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <!-- Sun/Moon SVG toggle handled in CSS/JS -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <canvas id="particle-canvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-text animate-fade-up">
+                    <p class="greeting">Hello, I am</p>
+                    <h1 class="name">Arafat Hossain</h1>
+                    <h2 class="title">
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">Mechanical Engineering graduate from Bangladesh University of Engineering and Technology (BUET) with expertise in CAD design, engineering simulation, and design automation. Proficient in SOLIDWORKS, ANSYS, and Python, with experience developing engineering automation tools using the SOLIDWORKS API for parametric modeling and engineering calculations. Interested in mechanical design, manufacturing, robotics, and industrial automation.</p>
+                    <div class="hero-buttons">
+                        <a href="#resume" class="btn btn-primary ripple">Download CV</a>
+                        <a href="#projects" class="btn btn-secondary ripple">View Projects</a>
+                        <a href="#contact" class="btn btn-outline ripple">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper animate-fade-in">
+                    <div class="glass-card image-placeholder">
+                        <img src="Assets/arafatPhoto/arafatPhoto1.png" alt="Arafat Hossain" class="profile-img" id="hero-slider-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text glass-card scroll-animate">
+                        <h3>Professional Introduction</h3>
+                        <p>I am a Mechanical Engineering graduate from Bangladesh University of Engineering and Technology (BUET) with expertise in CAD design, engineering simulation, and automation. My work focuses on developing efficient engineering solutions through SOLIDWORKS, ANSYS, Python, and the SOLIDWORKS API, with a strong interest in mechanical design, manufacturing, robotics, and industrial automation.</p>
+                        
+                        <h3>Career Objective</h3>
+                        <p>To begin my career as a Mechanical Engineer by applying my knowledge of CAD design, engineering simulation, and automation to improve manufacturing processes, enhance engineering efficiency, and continuously develop my technical skills.</p>
+                        
+                        <h3>Engineering Interests</h3>
+                        <p>CAD Design and Automation, SOLIDWORKS API Development, Engineering Simulation (FEA & CFD), Manufacturing Engineering, Mechanical System Design, Robotics, and Industrial Automation.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card scroll-animate counter-box">
+                            <h3 class="counter" data-target="40">0</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card glass-card scroll-animate counter-box">
+                            <h3 class="counter" data-target="4">0</h3>
+                            <p>Certificates</p>
+                        </div>
+                        <div class="stat-card glass-card scroll-animate counter-box">
+                            <h3 class="counter" data-target="1">0</h3>
+                            <p>Industrial Training</p>
+                        </div>
+                        <div class="stat-card glass-card scroll-animate counter-box">
+                            <h3 class="counter" data-target="10">0</h3>
+                            <p>Automation Tools Developed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+
+        <div class="skills-grid">
+
+            <!-- Engineering -->
+            <div class="skill-category glass-card scroll-animate">
+                <h3>Mechanical Engineering & CAD</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Mechanical Design</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>SOLIDWORKS (Parts, Assemblies & Drawings)</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>SOLIDWORKS API Automation</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>ANSYS Mechanical (Static & Thermal)</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>ANSYS Fluent (CFD)</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>AutoCAD</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Manufacturing & Product Design</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>SOLIDWORKS Flow Simulation</span>
+                        <span>Advanced</span>
+                    </div>
+                </div> 
+
+            </div>
+
+            <!-- Programming -->
+            <div class="skill-category glass-card scroll-animate">
+                <h3>Programming & Engineering Software</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>OpenCV</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MATLAB</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML, CSS & JavaScript</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Microsoft Excel</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>VBA (SolidWorks Macros)</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Engineering Problem Solving</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Siemens LOGO! Soft Comfort</span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="timeline">
+                    <!-- First Timeline Item -->
+                    <div class="timeline-item scroll-animate">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Industrial Trainee</h3>
+                            <h4>Berger Paints Bangladesh Limited</h4>
+                            <span class="timeline-date">10 March 2025 – 28 March 2025</span>
+                            <p>
+                                Completed a three-week industrial training program with practical exposure to paint manufacturing
+                                processes, production operations, quality control, and process engineering.
+                            </p>
+                            <p><strong>Key Responsibilities:</strong></p>
+                            <ul>
+                                <li>Visited and studied the operations of the Resin Plant, Water-Based Plant, Solvent-Based Plant, Powder Coating Plant, QA Warehouse, ETP, Incinerator, and Finished Goods Plant.</li>
+                                <li>Prepared a P&amp;ID for the compressed air distribution system.</li>
+                                <li>Conducted a process improvement study for the Water-Based Paint Plant.</li>
+                                <li>Performed process capability analysis (Cp/Cpk) for the 2H Filling Machine using statistical quality control techniques.</li>
+                                <li>Observed industrial manufacturing practices, quality assurance procedures, and safety standards in a large-scale production environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Second Timeline Item (এখন এটি .timeline এর ভেতরে আছে) -->
+                    <div class="timeline-item scroll-animate">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Academic Tutor</h3>
+                            <h4>Self-Employed</h4>
+                            <span class="timeline-date">2021 – Present</span>
+                            <p>
+                                Provided personalized academic tutoring to SSC and HSC students in Mathematics, Physics, and Chemistry, helping them strengthen conceptual understanding and improve academic performance.
+                            </p>
+                            <p><strong>Key Responsibilities:</strong></p>
+                            <ul>
+                                <li>Taught Mathematics, Physics, and Chemistry to SSC and HSC students through one-on-one tutoring.</li>
+                                <li>Prepared customized lesson plans, assignments, and practice materials based on individual learning needs.</li>
+                                <li>Guided students in developing analytical thinking, problem-solving skills, and effective examination strategies.</li>
+                                <li>Built strong communication, mentoring, and time management skills through continuous academic instruction.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div> <!-- End of .timeline -->
+            </div> <!-- End of .container -->
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="filter-container scroll-animate">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cad">CAD</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="simulation">Simulation</button>
+                    <button class="filter-btn" data-filter="robotics">Robotics</button>
+                    <button class="filter-btn" data-filter="games">Games</button>
+                    <button class="filter-btn" data-filter="arduino">Arduino</button>
+                    
+                </div>
+                    <div class="projects-grid" id="dynamic-projects-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item scroll-animate">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>B.Sc in Mechanical Engineering</h3>
+                            <h4>Bangladesh University of Engineering and Technology (BUET)</h4>
+                            <span class="timeline-date">2020</span>
+                            <p>
+                                Completed a Bachelor of Science in Mechanical Engineering with a strong foundation in mechanical design, engineering simulation, CAD automation, and robotics, supported by extensive academic projects and industrial training.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-animate">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Higher Secondary Certificate (HSC)</h3>
+                            <h4>Notre Dame College, Dhaka</h4>
+                            <span class="timeline-date">2020</span>
+                            <p>
+                                Completed the Higher Secondary Certificate (Science) with a GPA of 5.00, building a strong foundation in Mathematics, Physics, and Chemistry that prepared me for engineering studies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-animate">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Secondary School Certificate (SSC)</h3>
+                            <h4>Akkelpur Govt. F.U. Pilot High School</h4>
+                            <span class="timeline-date">2018</span>
+                            <p>
+                                Awarded the General Scholarship in the Secondary School Certificate (SSC) Examination.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+
+                    <!-- Certificate 1 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/SolidWorks CSWA.png" alt="CSWP Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Certified SOLIDWORKS Associate (CSWA)</h3>
+                            <p>Dassault Systèmes</p>
+                            <span>Dec 1, 2023</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-2AHUCXDZ9W" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/Coursera Arduino certificate.png" alt="Arduino Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>The Arduino Platform and C Programming</h3>
+                            <p>Coursera</p>
+                            <span>Dec 30, 2023</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="https://coursera.org/verify/LP27AGXK9MTF" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/Coursera MATLAB.png" alt="Arduino Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Introduction to Programming with MATLAB</h3>
+                            <p>Coursera</p>
+                            <span>Dec 3, 2023</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="https://coursera.org/verify/CWS5ETTNUBDY" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/BACE course certificate.png" alt="Arduino Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Computer Office Application</h3>
+                            <p>Bangladesh Association for Community Education (BACE)</p>
+                            <span>Jun 30, 2018</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/Berger Paints Certificate.png" alt="Arduino Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Industrial Training Completion Certificate</h3>
+                            <p>Berger Paints Bangladesh Ltd.</p>
+                            <span>March 28, 2025</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 6 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/MATLAB onramp certificate.png" alt="MATLAB Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>MATLAB Onramp</h3>
+                            <p>MathWorks</p>
+                            <span>Jun 4, 2023</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 7 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/MatLab Image processing.png" alt="MATLAB Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Image Processing Onramp</h3>
+                            <p>MathWorks</p>
+                            <span>Feb 28, 2024</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 8 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/certificate matLab ODE.png" alt="MATLAB Certificate">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Solving Ordinary Differential Equations with MATLAB</h3>
+                            <p>MathWorks</p>
+                            <span>Jun 26, 2023</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 9 -->
+                    <div class="cert-card glass-card scroll-animate">
+                        <div class="cert-img">
+                            <!-- src এর ভেতর আপনার ছবির নাম দিন -->
+                            <img src="Assets/certificates/Coursera Google Management.png" alt="Foundations of Project Management">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Foundations of Project Management</h3>
+                            <p>Coursera</p>
+                            <span>Apr 1, 2023</span>
+                            <!-- href এর ভেতর আপনার ভেরিফাই লিংকটি দিন -->
+                            <a href="https://coursera.org/verify/L5AN3FKKVYDJ" target="_blank" class="btn btn-outline btn-sm">Verify</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Thesis Section -->
+        <section id="thesis" class="section">
+            <div class="container">
+                <h2 class="section-title">Undergraduate Thesis</h2>
+                <div class="thesis-card glass-card scroll-animate">
+                    <div class="thesis-img">
+                        <img src="Assets/Thesis/piston.png" alt="FGM Piston Model">
+                        <img src="Assets/Thesis/methodology.png" alt="Thesis Methodology Flowchart">
+                    </div>
+
+                    <div class="thesis-content">
+                        <h3>Comparative Thermo Mechanical Assessment of Functionally Graded Pistons with Multiple
+                        Material System and Gradation Profiles</h3>
+                        <div class="thesis-section">
+                            <h4>Abstract</h4>
+                            <p>This research investigates the thermo-mechanical performance of Functionally Graded Material (FGM) pistons as an alternative to conventional aluminum pistons. Using ANSYS Workbench and APDL-based material grading, thermal, structural, and coupled analyses were conducted on multiple FGM material combinations. The results demonstrate that FGM pistons can reduce heat loss, improve thermal insulation, control deformation, and enhance overall piston durability and engine performance.</p>
+                        </div>
+                        <div class="thesis-section">
+                            <h4>Objectives</h4>
+                            <p>
+                            The objective of this research was to evaluate the thermo-mechanical performance of Functionally Graded Material (FGM) pistons through zone-wise thermal and structural analyses. The study investigated different FGM material combinations to identify an optimal configuration that improves thermal insulation, reduces deformation, enhances durability, and supports efficient piston design under operating conditions.
+                            </p>
+                        </div>
+                        <div class="thesis-section">
+                            <h4>Methodology</h4>
+                            <p>
+                            This research developed and validated an ANSYS APDL-based workflow to model the thermo-mechanical behavior of Functionally Graded Materials (FGMs). A one-dimensional FGM solid block was first used as a validation model, where analytical solutions for temperature distribution, mechanical deformation, and thermo-mechanical deformation were compared with numerical results obtained from ANSYS APDL.
+                            </p>
+
+                            <p>
+                            After successful validation, the workflow was applied to a Functionally Graded Material piston. Thermal, structural, and coupled thermo-mechanical analyses were performed to evaluate the performance of different FGM material combinations under engine operating conditions, enabling a zone-wise assessment of temperature distribution, deformation, and structural behavior.
+                            </p>
+                        </div>
+                        <div class="thesis-section">
+                            <h4>Results</h4>
+                            <p>
+                            <ul>
+                                <li>Developed and validated an ANSYS APDL-based workflow for Functionally Graded Material (FGM) analysis.</li>
+                                <li>Numerical results showed good agreement with analytical solutions, confirming the accuracy of the proposed methodology.</li>
+                                <li>FGM pistons demonstrated improved thermal insulation and reduced heat loss compared to conventional piston materials.</li>
+                                <li>Zone-wise material grading provided better deformation control under thermo-mechanical loading.</li>
+                                <li>The study identified the potential of optimized FGM configurations to improve piston durability, thermal efficiency, and overall engine performance.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <a href="Assets/Thesis/methodology.pdf" class="btn btn-primary ripple">Download PDF Report </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container center-text">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-preview glass-card scroll-animate">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.5" class="resume-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <h3>Curriculum Vitae</h3>
+                    <p>Comprehensive overview of my academic background, technical skills, and engineering projects.</p>
+                    <a href="Assets/Arafat_Hossain_CV.pdf" class="btn btn-secondary ripple">Download Resume (.pdf)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-grid">
+                    <div class="contact-info scroll-animate">
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>arafat.aruzz@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+880 1616-645091</p>
+                            </div>
+                        </div>
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">🔗</div>
+                            <div>
+                                <h4>Network</h4>
+                                <a href="https://www.linkedin.com/in/arafat178/" style="color: var(--cyan); margin-right: 10px;">LinkedIn</a>
+                                <a href="https://github.com/Arafat178" style="color: var(--cyan);">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form
+                        action="https://formsubmit.co/arafat.aruzz@gmail.com"
+                        method="POST"
+                        class="contact-form glass-card scroll-animate">
+
+                        <!-- Disable CAPTCHA -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Email Subject -->
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+                        <!-- Reply-To -->
+                        <input type="hidden" name="_template" value="table">
+
+                        <!-- Redirect after submit -->
+                        <input type="hidden" name="_next" value="thankU.html"> <!-- edit-->
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input
+                                type="text"
+                                name="Name"
+                                required
+                                placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input
+                                type="email"
+                                name="Email"
+                                required
+                                placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea
+                                name="Message"
+                                rows="5"
+                                required
+                                placeholder="Project inquiry..."></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary ripple w-100">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/arafat178/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <a href="https://github.com/Arafat178" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </div>
+            <p>&copy; 2026 Arafat Hossain. </p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="projectsData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
