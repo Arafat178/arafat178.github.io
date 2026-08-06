@@ -943,7 +943,22 @@ body {
     transition: transform 0.4s ease; /* জুম ইফেক্টের জন্য */
 }
 
+
 /* মাউস নিলে ছবির উপর সুন্দর একটি জুম ইফেক্ট হবে */
 .project-card:hover .project-img {
     transform: scale(1.05); 
+}
+
+/* Hero Background Media (Video or SVG) */
+.hero-bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    object-fit: cover; /* এটি 1920x1080 রেশিও ঠিক রেখে পুরো স্ক্রিন কভার করবে */
+    z-index: -2; /* particle-canvas (যার z-index: -1) এর পেছনে রাখার জন্য */
+    opacity: 0.10; /* তোমার সামনের টেক্সট যেন স্পষ্টভাবে পড়া যায়, তাই অপাসিটি কমিয়ে দেওয়া হলো */
+    pointer-events: none; /* মাউস ইভেন্টগুলো যেন ভিডিওতে আটকে না যায় */
+
 }
