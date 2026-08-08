@@ -450,5 +450,15 @@ const myProjects = [
         githubLink: "",
         liveDemoLink: "",
         youtubeLink: "https://youtube.com/shorts/grZeZ8cJnKA?si=5KUDNupsWCQXuOIh"
+    },
+    {
+        title: "Bearing Design & Selection System",
+        description: "A browser-based engineering tool for bearing selection, equivalent load calculation, bearing life estimation, and dynamic load rating evaluation based on the methodology presented in Shigley's Mechanical Engineering Design.",
+        category: "automation simulation", // cad automation python simulation robotics games arduino
+        image: "Assets/projects/project46 bearingDesign.png", // আপনার প্রজেক্টের ছবির লোকেশন
+        techStack: ["HTML", "CSS", "JavaScript"],
+        githubLink: "https://github.com/Arafat178/Bearing-Design-Selection-System",
+        liveDemoLink: "https://arafat178.github.io/Bearing-Design-Selection-System/",
+        youtubeLink: "https://youtu.be/sqPa-vsFFak?si=1Y6UQC8hwJr15rR0"
     }
 ];
