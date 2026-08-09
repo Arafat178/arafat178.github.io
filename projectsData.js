@@ -468,7 +468,7 @@ const myProjects = [
         image: "Assets/projects/project47 vocab.png", // আপনার প্রজেক্টের ছবির লোকেশন
         techStack: ["HTML", "CSS", "JavaScript", "Firebase", "Firestore", "Gemini AI", "Web Speech API"],
         githubLink: "https://github.com/Arafat178/AI-Vocabulary-Tutor",
-        liveDemoLink: "https://arafat178.github.io/AI-Vocabulary-Tutor/",
+        liveDemoLink: "https://gemini-vocabulary-tutor.vercel.app/",
         youtubeLink: ""
     }
 ];
