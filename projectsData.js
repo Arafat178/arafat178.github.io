@@ -460,5 +460,15 @@ const myProjects = [
         githubLink: "https://github.com/Arafat178/Bearing-Design-Selection-System",
         liveDemoLink: "https://arafat178.github.io/Bearing-Design-Selection-System/",
         youtubeLink: "https://youtu.be/sqPa-vsFFak?si=1Y6UQC8hwJr15rR0"
+    },
+    {
+        title: "AI Vocabulary Tutor",
+        description: "It is a modern web-based English learning application that helps users understand, pronounce, remember, and practice English vocabulary using Google Gemini AI.",
+        category: "automation", // cad automation python simulation robotics games arduino
+        image: "Assets/projects/project47 vocab.png", // আপনার প্রজেক্টের ছবির লোকেশন
+        techStack: ["HTML", "CSS", "JavaScript", "Firebase", "Firestore", "Gemini AI", "Web Speech API"],
+        githubLink: "https://github.com/Arafat178/AI-Vocabulary-Tutor",
+        liveDemoLink: "https://arafat178.github.io/AI-Vocabulary-Tutor/",
+        youtubeLink: ""
     }
 ];
