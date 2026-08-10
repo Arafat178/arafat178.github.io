@@ -470,5 +470,15 @@ const myProjects = [
         githubLink: "https://github.com/Arafat178/AI-Vocabulary-Tutor",
         liveDemoLink: "https://gemini-vocabulary-tutor.vercel.app/",
         youtubeLink: ""
+    },
+    {
+        title: "ShikkhaAI",
+        description: "A bilingual AI tutor for learning Science through clear, structured explanations in Bangla and English",
+        category: "automation", // cad automation python simulation robotics games arduino
+        image: "Assets/projects/project48 shikkhaAI.png", // আপনার প্রজেক্টের ছবির লোকেশন
+        techStack: ["HTML", "CSS", "JavaScript", "Gemini AI"],
+        githubLink: "",
+        liveDemoLink: "https://shikkha-eight.vercel.app/",
+        youtubeLink: ""
     }
 ];
