@@ -480,5 +480,15 @@ const myProjects = [
         githubLink: "",
         liveDemoLink: "https://shikkha-eight.vercel.app/",
         youtubeLink: ""
+    },
+    {
+        title: "Duck Hunt – 2D Action Shooting Game",
+        description: "Duck Hunt is a fast-paced 2D arcade shooting game where players hunt moving ducks, build combos, and aim for the highest score.",
+        category: "games", // cad automation python simulation robotics games arduino
+        image: "Assets/projects/project49 duckHunt.png", // আপনার প্রজেক্টের ছবির লোকেশন
+        techStack: ["HTML", "CSS", "JavaScript"],
+        githubLink: "",
+        liveDemoLink: "https://arafat178.github.io/Duck-Hunt-Web/",
+        youtubeLink: ""
     }
 ];
