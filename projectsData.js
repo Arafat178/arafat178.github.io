@@ -489,6 +489,16 @@ const myProjects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         githubLink: "",
         liveDemoLink: "https://arafat178.github.io/Duck-Hunt-Web/",
+        youtubeLink: "https://youtu.be/Y6SzfmMgRC8"
+    },
+    {
+        title: "QR Studio — Custom QR Code Maker",
+        description: "Create QR codes for URLs, text, email, phone numbers, Wi-Fi, SMS, vCard, and locations — then customize the design, add your own logo, preview it instantly, and download it in high quality.",
+        category: "simulation", // cad automation python simulation robotics games arduino
+        image: "Assets/projects/project50 QRcode.png", // আপনার প্রজেক্টের ছবির লোকেশন
+        techStack: ["HTML", "CSS", "JavaScript"],
+        githubLink: "https://github.com/Arafat178/QR-Studio",
+        liveDemoLink: "https://arafat178.github.io/QR-Studio/",
         youtubeLink: ""
     }
 ];
