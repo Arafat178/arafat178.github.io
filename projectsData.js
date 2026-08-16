@@ -500,5 +500,15 @@ const myProjects = [
         githubLink: "https://github.com/Arafat178/QR-Studio",
         liveDemoLink: "https://arafat178.github.io/QR-Studio/",
         youtubeLink: ""
+    },
+    {
+        title: "Gyroid Design Automation Tool",
+        description: "An engineering tool for generating parametric SolidWorks VBA macros for Gyroid structures while simultaneously estimating porosity from an empirical correlation.",
+        category: "simulation cad automation", // cad automation python simulation robotics games arduino
+        image: "Assets/projects/project51 gyroid.png", // আপনার প্রজেক্টের ছবির লোকেশন
+        techStack: ["HTML", "CSS", "JavaScript", "SOLIDWORKS", "VBA", "SOLIDWORKS API"],
+        githubLink: "https://github.com/Arafat178/Gyroid-Design-Automation-Tool",
+        liveDemoLink: "https://arafat178.github.io/Gyroid-Design-Automation-Tool/",
+        youtubeLink: "https://youtu.be/HzK5nAKYHjg?si=hMPK-TEKlMSovigC"
     }
 ];
